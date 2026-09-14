@@ -1,6 +1,6 @@
 # 🚀 Project Sprint Lifecycle & Reports (ALL_SPRINTS.md)
 
-เอกสารรวบรวมแผนการดำเนินงาน ผลการพัฒนา และรายงานการทดสอบระบบ (QA & Debugging Reports) สำหรับโปรเจกต์ **Virtual Pet Companion (CLI)** ครอบคลุมตั้งแต่ Sprint 1 ถึง Final Sprint ตามเกณฑ์รายวิชา CP352301 Script Programming
+เอกสารรวบรวมแผนการดำเนินงาน ผลการพัฒนา และรายงานการทดสอบระบบ (QA & Debugging Reports) สำหรับโปรเจกต์ **Virtual Pet Companion (CLI)** ครอบคลุมตั้งแต่ Sprint 1 ถึง Final Sprint 
 
 ---
 
