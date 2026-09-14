@@ -3,6 +3,16 @@
 ระบบจำลองการดูแลสัตว์เลี้ยงเสมือนจริง พัฒนาในรูปแบบ Command Line Interface (CLI) ด้วยภาษา Python โดยประยุกต์ใช้หลักการเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming - OOP), การบันทึกข้อมูลยั่งยืนลงไฟล์ JSON, การดึงข้อมูลจาก External API (Dog API / Cat Facts API) และการจัดโครงสร้างโค้ดแบบแยกชั้น (Modular Architecture)
 
 ---
+## 🎯 วัตถุประสงค์ของโครงการ (Project Objectives)
+
+1. **การบูรณาการหลักการ OOP & Modular Architecture:** ประยุกต์ใช้การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming) ร่วมกับการจัดโครงสร้างโปรแกรมแบบโมดูลที่มีการแบ่งแยกหน้าที่อย่างชัดเจน (Separation of Concerns) แบ่งออกเป็น Presentation, Business Logic และ Data Access Layer
+2. **การจัดการข้อมูลยั่งยืน (Data Persistence):** พัฒนากลไกการอ่านและบันทึกสถานะของสัตว์เลี้ยงลงในไฟล์ JSON เพื่อให้ข้อมูลคงอยู่ระหว่างการเปิด-ปิดใช้งานโปรแกรม
+3. **การประมวลผลข้อมูลและการคำนวณตามเวลา (Data Processing & Decay System):** พัฒนาอัลกอริทึมคำนวณส่วนต่างของเวลา (Timestamp) เพื่อหักลบค่าสถานะ (Decay Over Time) อัตโนมัติ รวมถึงการกรอง ค้นหา และเรียงลำดับข้อมูลสถานะ
+4. **การเชื่อมต่อ API ภายนอก (External API Integration):** ดึงข้อมูลแบบเรียลไทม์จาก Dog API หรือ Cat Facts API มาสร้างปฏิสัมพันธ์ (Interactions) สุ่มรูปภาพและเกร็ดความรู้ให้กับผู้ใช้
+5. **ความทนทานต่อข้อผิดพลาดและการจัดการ Edge Cases (Error Resilience):** ออกแบบระบบตรวจสอบความถูกต้องของข้อมูลนำเข้า (Input Validation) และการดักจับ Exception (Exception Handling) เพื่อป้องกันไม่ให้โปรแกรมพังเมื่อผู้ใช้กรอกข้อมูลผิดพลาด
+6. **การพัฒนาแบบ Iterative & DevOps Standards:** ดำเนินงานตามกระบวนการ Agile/Sprint จัดทำชุดทดสอบอัตโนมัติ (Automated Testing) และตั้งค่า CI/CD Pipeline ผ่าน GitHub Actions รวมกับแนวคิด AI Integration
+
+---
 
 ## สถาปัตยกรรมระบบ (Architectural Scope)
 โปรเจกต์นี้ถูกออกแบบโดยแบ่งหน้าที่การทำงานอย่างชัดเจน (Separation of Concerns) ออกเป็น 3 ชั้นหลัก:
