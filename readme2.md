@@ -45,7 +45,7 @@ virtual-pet-cli/
 ├── pet_state.json         # ไฟล์บันทึกสถานะสัตว์เลี้ยง (Auto-generated)
 ├── README.md              # เอกสารอธิบายโปรเจกต์
 └── requirements.txt       # Dependencies (requests, pytest, flake8)
-
+```
 ---
 
 ## 🚀 การรันโปรแกรม (Execution)
